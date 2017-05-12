@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>SCAW - Presentación de JSF</title>
+	<link rel="stylesheet" type="text/css" href="css/table-style.css" />
+	<ui:include src="/_Links.xhtml"></ui:include>
+</h:head>
+
+<h:body>
+
+
+	<div class="col-md-5"> 
+		<h2 class="text-center">Index!</h2>
+		<div class="col-md-12">
+			<h:form>
+
+
+
+				<div class="col-md-5">
+					<h:inputText value="#{usuarioBean.nickName}" id="nickName"
+						class="form-control">
+					</h:inputText>
+				</div>
+
+				<div class="col-md-5">
+					<h:inputText value="#{usuarioBean.contraseña}" id="contraseña"
+						class="form-control">
+					</h:inputText>
+				</div>
+				<div class="col-md-2">
+				
+				<h:commandButton action="#{usuarioBean.login}" value="Login"
+					styleClass="btn btn-success">
+
+				</h:commandButton>
+				</div>
+
+			</h:form>
+		</div>
+
+	</div>
+
+
+
+</h:body>
+</html>
