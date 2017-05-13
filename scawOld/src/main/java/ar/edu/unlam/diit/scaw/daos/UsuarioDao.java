@@ -10,6 +10,24 @@ public interface UsuarioDao {
 	
 	public List<Usuario> getListaDeUsuarios();
 	
+	public Usuario getUsuarioPorNickName(String nickName) ;
+	
+	//aciones del usuario admin 
+	public Usuario getUsuarioPorId(Integer id);
+	
+	
+	public List<Usuario> getListaDeUsuariosMenosElUsuarioActual(Integer idUsuarioActual);
+	
+	public List<Usuario> getListaDeUsuariosQueNoEstanAprobados();
+	
+	public void seterElValorDeAprobadoDeUnUsuario(Integer id,Integer valor0o1);
+	
+	public void guardarUnUsuarioEnLaBDD(Usuario usuarioAGuardar);
+	
+	public void modificarUnUsuarioPorId(Integer id,String nickname,String nombre,String apellido,String contraseña,String tipo,Integer estaAprobado);
+	
+	public void eliminarUnUsuarioPorId(Integer id);
+	
 	
 	
 	

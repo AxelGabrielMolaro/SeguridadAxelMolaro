@@ -3,7 +3,7 @@ INSERT INTO person (FIRSTNAME, LASTNAME, EMAIL) VALUES ('Walter', 'Ureta', 'wure
 INSERT INTO person (FIRSTNAME, LASTNAME, EMAIL) VALUES ('Juan', 'Monteagudo', 'jmonteagudo@unlam.edu.ar');
 
 INSERT INTO usuario(NOMBRE,APELLIDO,CONTRASENA,TIPO,ESTAAPROBADO,NICKNAME) VALUES  ('admin','molaro','123','administrador',1,'admin');
-
+INSERT INTO usuario(NOMBRE,APELLIDO,CONTRASENA,TIPO,ESTAAPROBADO,NICKNAME) VALUES  ('normal','normal','123','normal',0,'normal');
 /*
 INSERT INTO tarea(NOMBRE,DESCRIPCION,ACCESO,ESTADO) VALUES ('Limpieza','barrer la cocina','privada','pendiente');
 INSERT INTO tarea(NOMBRE,DESCRIPCION,ACCESO,ESTADO) VALUES ('tareaNoPendiente','barrer la cocina','privada','completa');
